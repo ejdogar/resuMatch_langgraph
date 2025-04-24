@@ -17,6 +17,11 @@ def extract_content(message):
         return message.content
     return str(message)
 
+
+@app.get("/")
+async def root():
+    return "Welcome to resuMatch"
+
 @app.post("/process_resume/")
 async def process_resume(
     resume_file: UploadFile = File(...),
