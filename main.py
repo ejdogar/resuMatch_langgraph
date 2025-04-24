@@ -61,6 +61,6 @@ async def download_file(file_path: str):
     return FileResponse(file_path, filename=os.path.basename(file_path))
 
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
